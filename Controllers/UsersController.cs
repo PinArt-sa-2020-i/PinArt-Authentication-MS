@@ -48,8 +48,8 @@ namespace WebApi.Controllers
             {
                 Id = user.Id,
                 Username = user.Username,
-                FirstName = user.FirstName,
-                LastName = user.LastName
+                FirstName = user.Nombre,
+                LastName = user.Apellido
             });
         }
 
