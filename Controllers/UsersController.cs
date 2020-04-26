@@ -64,7 +64,8 @@ namespace WebApi.Controllers
             {
                 // create user
                 _userService.Create(user, model.Password);
-                return Ok();
+                var response = _mapper.Map<UserModel>(user);
+                return Ok(response);
             }
             catch (AppException ex)
             {
