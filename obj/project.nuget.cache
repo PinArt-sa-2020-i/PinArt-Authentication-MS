@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YTt9kHQKCQzegCx8uMHXIi1RiOGL9ret0rzFajl1pgSCcwdltICZ8cqrLhzXZJKcIjbovEZytfYDAFFmk9MgeA==",
+  "dgSpecHash": "CMYXqQEZZ4oWM+d6fEKhirVYlh7V46H/BAWm0gOQRCUvRl5ZFMdUQyOS2SUHcKqsWNLoB1bBaaTc4EgTg3iqoA==",
   "success": true,
-  "projectFilePath": "/Volumes/Documentos/aspnet-core-3-registration-login-api/WebApi.csproj",
+  "projectFilePath": "/Volumes/Documentos/PinArt-Authentication-MS/WebApi.csproj",
   "expectedPackageFiles": [
     "/Users/tomperez/.nuget/packages/automapper/9.0.0/automapper.9.0.0.nupkg.sha512",
     "/Users/tomperez/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/7.0.0/automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

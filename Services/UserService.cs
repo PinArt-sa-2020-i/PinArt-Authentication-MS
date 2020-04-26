@@ -93,11 +93,11 @@ namespace WebApi.Services
             }
 
             // update user properties if provided
-            if (!string.IsNullOrWhiteSpace(userParam.FirstName))
-                user.FirstName = userParam.FirstName;
+            if (!string.IsNullOrWhiteSpace(userParam.Nombre))
+                user.Nombre = userParam.Nombre;
 
-            if (!string.IsNullOrWhiteSpace(userParam.LastName))
-                user.LastName = userParam.LastName;
+            if (!string.IsNullOrWhiteSpace(userParam.Apellido))
+                user.Apellido = userParam.Apellido;
 
             // update password if provided
             if (!string.IsNullOrWhiteSpace(password))

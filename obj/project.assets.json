@@ -8309,11 +8309,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/Documentos/aspnet-core-3-registration-login-api/WebApi.csproj",
+      "projectUniqueName": "/Volumes/Documentos/PinArt-Authentication-MS/WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "/Volumes/Documentos/aspnet-core-3-registration-login-api/WebApi.csproj",
+      "projectPath": "/Volumes/Documentos/PinArt-Authentication-MS/WebApi.csproj",
       "packagesPath": "/Users/tomperez/.nuget/packages/",
-      "outputPath": "/Volumes/Documentos/aspnet-core-3-registration-login-api/obj/",
+      "outputPath": "/Volumes/Documentos/PinArt-Authentication-MS/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tomperez/.nuget/NuGet/NuGet.Config"
