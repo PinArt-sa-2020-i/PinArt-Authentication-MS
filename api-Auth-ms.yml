@@ -1,0 +1,156 @@
+#Test with: http://editor.swagger.io/
+
+swagger: "2.0"
+info:
+  version: 1.0.0
+  title: Microservice for Authentication
+  description: Authentication MS for PinArt App
+  license:
+    name: Software Architecture, 2020-I
+
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /:
+    get:
+      summary: Returns all users
+      operationId: getAllUsers
+      responses:
+        "200":
+          description: Ok
+          schema:
+            $ref: "#/definitions/UsersList"
+        "406":
+          description: Not Acceptable (Invalid Params)
+          schema:
+            $ref: "#/definitions/ErrorModel"
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: "#/definitions/ErrorModel"
+
+  /register:
+    post:
+      summary: Creates a new user
+      operationId: createUser
+      parameters:
+        - name: user
+          in: body
+          required: true
+          description: User Object
+          schema:
+            $ref: "#/definitions/User"
+      responses:
+        "201":
+          description: Created
+        "400":
+          description: Bad Request
+          schema:
+            $ref: "#/definitions/ErrorModel"
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: "#/definitions/ErrorModel"
+
+  /authenticate:
+    post:
+      summary: Logins a user
+      operationId: loginUser
+      parameters:
+        - name: user
+          in: body
+          required: true
+          description: User Object
+          schema:
+            $ref: "#/definitions/UserLogin"
+      responses:
+        "200":
+          description: Ok
+          schema:
+            $ref: "#/definitions/LoginToken"
+        "400":
+          description: Bad Request
+          schema:
+            $ref: "#/definitions/ErrorModel"
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: "#/definitions/ErrorModel"
+
+definitions:
+  # Users
+  User:
+    type: object
+    properties:
+      id:
+        type: integer
+      firstName:
+        type: string
+      lastName:
+        type: string
+      username:
+        type: string
+      password:
+        type: string
+
+  UserLogin:
+    type: object
+    properties:
+      username:
+        type: string
+      password:
+        type: string
+
+  LoginToken:
+    type: object
+    properties:
+      id:
+        type: integer
+      username:
+        type: string
+      firstName:
+        type: string
+      lastName:
+        type: string
+      token:
+        type: string
+
+  UsersList:
+    type: object
+    required:
+      - total
+      - list
+    properties:
+      total:
+        type: number
+      list:
+        type: array
+        items:
+          $ref: "#/definitions/User"
+
+  # Errors
+  ErrorModel:
+    type: object
+    required:
+      - message
+      - code
+    properties:
+      message:
+        type: string
+      code:
+        type: number
+      description:
+        type: object
+# Added by API Auto Mocking Plugin
+# host: ec2-3-227-65-124.compute-1.amazonaws.com:4000
+# basePath: /users
+# schemes:
+#  - http
+# Added by API Auto Mocking Plugin
+host: virtserver.swaggerhub.com
+basePath: /tpereza/PinArt-Authentication-MS/1.0.0
+schemes:
+  - https
+  - http
