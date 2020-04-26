@@ -16,9 +16,9 @@ namespace WebApi.Helpers
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             // connect to sql server database
-            options.UseMySql("server=mysql; port=3306; Database=adminprofile; Uid=root; Pwd=root");
+            options.UseMySql("server=localhost; port=3306; Database=testing; Uid=root; Pwd=root");
         }
 
-        public DbSet<User> Users { get; set; }
+        public DbSet<Auth> Auths { get; set; }
     }
 }

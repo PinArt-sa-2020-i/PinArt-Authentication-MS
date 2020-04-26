@@ -48,8 +48,8 @@ namespace WebApi.Controllers
             {
                 Id = user.Id,
                 Username = user.Username,
-                FirstName = user.Nombre,
-                LastName = user.Apellido
+                FirstName = user.FirstName,
+                LastName = user.LastName
             });
         }
 
@@ -58,7 +58,7 @@ namespace WebApi.Controllers
         public IActionResult Register([FromBody]RegisterModel model)
         {
             // map model to entity
-            var user = _mapper.Map<User>(model);
+            var user = _mapper.Map<Auth>(model);
 
             try
             {
@@ -93,7 +93,7 @@ namespace WebApi.Controllers
         public IActionResult Update(int id, [FromBody]UpdateModel model)
         {
             // map model to entity and set id
-            var user = _mapper.Map<User>(model);
+            var user = _mapper.Map<Auth>(model);
             user.Id = id;
 
             try
