@@ -74,6 +74,10 @@
               "target": "Package",
               "version": "[8.0.19, )"
             },
+            "Novell.Directory.Ldap": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[3.1.1, )"

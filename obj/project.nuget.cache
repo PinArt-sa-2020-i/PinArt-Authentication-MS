@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CMYXqQEZZ4oWM+d6fEKhirVYlh7V46H/BAWm0gOQRCUvRl5ZFMdUQyOS2SUHcKqsWNLoB1bBaaTc4EgTg3iqoA==",
+  "dgSpecHash": "+54vynbQAOm+tpXDG1pNY2kC1q2MVA483unPamwxkcpO3dZhcGk7J3JGbj2T5FEbhVftv+hq1zsnGbE38U6Pog==",
   "success": true,
   "projectFilePath": "/Volumes/Documentos/PinArt-Authentication-MS/WebApi.csproj",
   "expectedPackageFiles": [
@@ -51,6 +51,7 @@
     "/Users/tomperez/.nuget/packages/mysqlconnector/0.61.0/mysqlconnector.0.61.0.nupkg.sha512",
     "/Users/tomperez/.nuget/packages/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
     "/Users/tomperez/.nuget/packages/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg.sha512",
+    "/Users/tomperez/.nuget/packages/novell.directory.ldap/2.2.1/novell.directory.ldap.2.2.1.nupkg.sha512",
     "/Users/tomperez/.nuget/packages/pomelo.entityframeworkcore.mysql/3.1.1/pomelo.entityframeworkcore.mysql.3.1.1.nupkg.sha512",
     "/Users/tomperez/.nuget/packages/pomelo.jsonobject/2.2.1/pomelo.jsonobject.2.2.1.nupkg.sha512",
     "/Users/tomperez/.nuget/packages/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -166,5 +167,16 @@
     "/Users/tomperez/.nuget/packages/system.xml.xpath/4.0.1/system.xml.xpath.4.0.1.nupkg.sha512",
     "/Users/tomperez/.nuget/packages/system.xml.xpath.xmldocument/4.0.1/system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Novell.Directory.Ldap 2.2.1\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v3.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Novell.Directory.Ldap",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

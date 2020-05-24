@@ -160,3 +160,4 @@
 /Volumes/Documentos/PinArt-Authentication-MS/obj/Debug/netcoreapp3.1/WebApi.dll
 /Volumes/Documentos/PinArt-Authentication-MS/obj/Debug/netcoreapp3.1/WebApi.pdb
 /Volumes/Documentos/PinArt-Authentication-MS/obj/Debug/netcoreapp3.1/WebApi.genruntimeconfig.cache
+/Volumes/Documentos/PinArt-Authentication-MS/bin/Debug/netcoreapp3.1/Novell.Directory.Ldap.dll
