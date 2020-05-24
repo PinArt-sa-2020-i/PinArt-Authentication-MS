@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+54vynbQAOm+tpXDG1pNY2kC1q2MVA483unPamwxkcpO3dZhcGk7J3JGbj2T5FEbhVftv+hq1zsnGbE38U6Pog==",
+  "dgSpecHash": "mRLZxBOz2rG0KQZAayQURTPgCFmV2WAEQ4gLP8cgr9aT246Idt5vv6Eyu3UpPstyZsrNRoubqfBT5L/RD4Wofw==",
   "success": true,
   "projectFilePath": "/Volumes/Documentos/PinArt-Authentication-MS/WebApi.csproj",
   "expectedPackageFiles": [
@@ -25,16 +25,17 @@
     "/Users/tomperez/.nuget/packages/microsoft.entityframeworkcore.sqlserver/3.1.0/microsoft.entityframeworkcore.sqlserver.3.1.0.nupkg.sha512",
     "/Users/tomperez/.nuget/packages/microsoft.extensions.caching.abstractions/3.1.0/microsoft.extensions.caching.abstractions.3.1.0.nupkg.sha512",
     "/Users/tomperez/.nuget/packages/microsoft.extensions.caching.memory/3.1.0/microsoft.extensions.caching.memory.3.1.0.nupkg.sha512",
-    "/Users/tomperez/.nuget/packages/microsoft.extensions.configuration/3.1.0/microsoft.extensions.configuration.3.1.0.nupkg.sha512",
-    "/Users/tomperez/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.0/microsoft.extensions.configuration.abstractions.3.1.0.nupkg.sha512",
-    "/Users/tomperez/.nuget/packages/microsoft.extensions.configuration.binder/3.1.0/microsoft.extensions.configuration.binder.3.1.0.nupkg.sha512",
-    "/Users/tomperez/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.0/microsoft.extensions.dependencyinjection.3.1.0.nupkg.sha512",
-    "/Users/tomperez/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.0/microsoft.extensions.dependencyinjection.abstractions.3.1.0.nupkg.sha512",
+    "/Users/tomperez/.nuget/packages/microsoft.extensions.configuration/3.1.4/microsoft.extensions.configuration.3.1.4.nupkg.sha512",
+    "/Users/tomperez/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.4/microsoft.extensions.configuration.abstractions.3.1.4.nupkg.sha512",
+    "/Users/tomperez/.nuget/packages/microsoft.extensions.configuration.binder/3.1.4/microsoft.extensions.configuration.binder.3.1.4.nupkg.sha512",
+    "/Users/tomperez/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.4/microsoft.extensions.dependencyinjection.3.1.4.nupkg.sha512",
+    "/Users/tomperez/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.4/microsoft.extensions.dependencyinjection.abstractions.3.1.4.nupkg.sha512",
     "/Users/tomperez/.nuget/packages/microsoft.extensions.dependencymodel/3.1.0/microsoft.extensions.dependencymodel.3.1.0.nupkg.sha512",
-    "/Users/tomperez/.nuget/packages/microsoft.extensions.logging/3.1.0/microsoft.extensions.logging.3.1.0.nupkg.sha512",
-    "/Users/tomperez/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.0/microsoft.extensions.logging.abstractions.3.1.0.nupkg.sha512",
-    "/Users/tomperez/.nuget/packages/microsoft.extensions.options/3.1.0/microsoft.extensions.options.3.1.0.nupkg.sha512",
-    "/Users/tomperez/.nuget/packages/microsoft.extensions.primitives/3.1.0/microsoft.extensions.primitives.3.1.0.nupkg.sha512",
+    "/Users/tomperez/.nuget/packages/microsoft.extensions.logging/3.1.4/microsoft.extensions.logging.3.1.4.nupkg.sha512",
+    "/Users/tomperez/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.4/microsoft.extensions.logging.abstractions.3.1.4.nupkg.sha512",
+    "/Users/tomperez/.nuget/packages/microsoft.extensions.logging.debug/3.1.4/microsoft.extensions.logging.debug.3.1.4.nupkg.sha512",
+    "/Users/tomperez/.nuget/packages/microsoft.extensions.options/3.1.4/microsoft.extensions.options.3.1.4.nupkg.sha512",
+    "/Users/tomperez/.nuget/packages/microsoft.extensions.primitives/3.1.4/microsoft.extensions.primitives.3.1.4.nupkg.sha512",
     "/Users/tomperez/.nuget/packages/microsoft.identity.client/3.0.8/microsoft.identity.client.3.0.8.nupkg.sha512",
     "/Users/tomperez/.nuget/packages/microsoft.identitymodel.jsonwebtokens/5.6.0/microsoft.identitymodel.jsonwebtokens.5.6.0.nupkg.sha512",
     "/Users/tomperez/.nuget/packages/microsoft.identitymodel.logging/6.5.0/microsoft.identitymodel.logging.6.5.0.nupkg.sha512",
@@ -51,7 +52,7 @@
     "/Users/tomperez/.nuget/packages/mysqlconnector/0.61.0/mysqlconnector.0.61.0.nupkg.sha512",
     "/Users/tomperez/.nuget/packages/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
     "/Users/tomperez/.nuget/packages/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg.sha512",
-    "/Users/tomperez/.nuget/packages/novell.directory.ldap/2.2.1/novell.directory.ldap.2.2.1.nupkg.sha512",
+    "/Users/tomperez/.nuget/packages/novell.directory.ldap.netstandard/3.2.0/novell.directory.ldap.netstandard.3.2.0.nupkg.sha512",
     "/Users/tomperez/.nuget/packages/pomelo.entityframeworkcore.mysql/3.1.1/pomelo.entityframeworkcore.mysql.3.1.1.nupkg.sha512",
     "/Users/tomperez/.nuget/packages/pomelo.jsonobject/2.2.1/pomelo.jsonobject.2.2.1.nupkg.sha512",
     "/Users/tomperez/.nuget/packages/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -167,16 +168,5 @@
     "/Users/tomperez/.nuget/packages/system.xml.xpath/4.0.1/system.xml.xpath.4.0.1.nupkg.sha512",
     "/Users/tomperez/.nuget/packages/system.xml.xpath.xmldocument/4.0.1/system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"Novell.Directory.Ldap 2.2.1\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v3.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "libraryId": "Novell.Directory.Ldap",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }
