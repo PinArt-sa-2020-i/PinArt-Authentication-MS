@@ -48,6 +48,7 @@ namespace WebApi.Services
             // ldap Authentication
             if (_context.auth(conn, objectDN, password))
             {
+                Console.WriteLine("Successful Connection LDAP");
                 // authentication successful
                 return user;
             }
