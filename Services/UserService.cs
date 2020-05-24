@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using WebApi.Entities;
 using WebApi.Helpers;
+using Novell.Directory.Ldap;
 
 namespace WebApi.Services
 {
@@ -27,6 +28,10 @@ namespace WebApi.Services
 
         public Auth Authenticate(string username, string password)
         {
+            string objectDN = "cn=" + username + ",ou=pinart,dc=pinart,dc=com";
+
+            LdapConnection conn = _context.connectLDAP();
+
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
                 return null;
 
@@ -40,8 +45,14 @@ namespace WebApi.Services
             if (!VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt))
                 return null;
 
-            // authentication successful
-            return user;
+            // ldap Authentication
+            if (_context.auth(conn, objectDN, password))
+            {
+                // authentication successful
+                return user;
+            }
+
+            return null;
         }
 
         public IEnumerable<Auth> GetAll()
@@ -56,12 +67,16 @@ namespace WebApi.Services
 
         public Auth Create(Auth user, string password)
         {
+            string container = "ou=pinart,dc=pinart,dc=com";
+            LdapConnection conn = _context.connectLDAP();
+
             // validation
             if (string.IsNullOrWhiteSpace(password))
                 throw new AppException("Password is required");
 
             if (_context.Auths.Any(x => x.Username == user.Username))
                 throw new AppException("Username \"" + user.Username + "\" is already taken");
+
 
             byte[] passwordHash, passwordSalt;
             CreatePasswordHash(password, out passwordHash, out passwordSalt);
@@ -71,6 +86,8 @@ namespace WebApi.Services
 
             _context.Auths.Add(user);
             _context.SaveChanges();
+
+            _context.createLDAP(conn, container, user.FirstName, user.LastName, user.Username, user.Username, password);
 
             return user;
         }

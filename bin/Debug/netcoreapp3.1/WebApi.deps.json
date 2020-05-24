@@ -33,6 +33,7 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.0",
           "Microsoft.IdentityModel.Tokens": "6.5.0",
           "MySql.Data.EntityFrameworkCore": "8.0.19",
+          "Novell.Directory.Ldap": "2.2.1",
           "Pomelo.EntityFrameworkCore.MySql": "3.1.1",
           "System.IdentityModel.Tokens.Jwt": "5.6.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
@@ -862,6 +863,17 @@
         },
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Novell.Directory.Ldap/2.2.1": {
+        "runtime": {
+          "lib/Novell.Directory.Ldap.dll": {
+            "assemblyVersion": "2.2.1.0",
+            "fileVersion": "0.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/Novell.Directory.Ldap.dll": {}
         }
       },
       "Pomelo.EntityFrameworkCore.MySql/3.1.1": {
@@ -4059,6 +4071,13 @@
       "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "path": "newtonsoft.json/11.0.2",
       "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+    },
+    "Novell.Directory.Ldap/2.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mK3SU8zbGHZY7/DglN5Hs5RDqLpmDIJ3L988ICC8ED4v5JlbxnPD1PKIlHVYmE037wNGx0T+TGt2GaykufO77A==",
+      "path": "novell.directory.ldap/2.2.1",
+      "hashPath": "novell.directory.ldap.2.2.1.nupkg.sha512"
     },
     "Pomelo.EntityFrameworkCore.MySql/3.1.1": {
       "type": "package",
