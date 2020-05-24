@@ -160,4 +160,14 @@
 /Volumes/Documentos/PinArt-Authentication-MS/obj/Debug/netcoreapp3.1/WebApi.dll
 /Volumes/Documentos/PinArt-Authentication-MS/obj/Debug/netcoreapp3.1/WebApi.pdb
 /Volumes/Documentos/PinArt-Authentication-MS/obj/Debug/netcoreapp3.1/WebApi.genruntimeconfig.cache
-/Volumes/Documentos/PinArt-Authentication-MS/bin/Debug/netcoreapp3.1/Novell.Directory.Ldap.dll
+/Volumes/Documentos/PinArt-Authentication-MS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+/Volumes/Documentos/PinArt-Authentication-MS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+/Volumes/Documentos/PinArt-Authentication-MS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+/Volumes/Documentos/PinArt-Authentication-MS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+/Volumes/Documentos/PinArt-Authentication-MS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Volumes/Documentos/PinArt-Authentication-MS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+/Volumes/Documentos/PinArt-Authentication-MS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+/Volumes/Documentos/PinArt-Authentication-MS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Debug.dll
+/Volumes/Documentos/PinArt-Authentication-MS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+/Volumes/Documentos/PinArt-Authentication-MS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+/Volumes/Documentos/PinArt-Authentication-MS/bin/Debug/netcoreapp3.1/Novell.Directory.Ldap.NETStandard.dll

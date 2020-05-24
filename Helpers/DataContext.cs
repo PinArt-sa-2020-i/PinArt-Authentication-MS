@@ -18,7 +18,7 @@ namespace WebApi.Helpers
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             // connect to sql server database
-            options.UseMySql("server=mysql; port=3306; Database=adminprofile; Uid=root; Pwd=root");
+            options.UseMySql("server=localhost; port=3306; Database=adminprofile; Uid=root; Pwd=root");
         }
 
         public LdapConnection connectLDAP()
@@ -51,40 +51,7 @@ namespace WebApi.Helpers
             }
         }
 
-        public void getAllLDAP(LdapConnection conn, string searchBase, string searchFilter)
-        {
-            string[] requiredAttributes = { "cn", "sn", "uid" };
-            LdapSearchResults lsc = conn.Search(searchBase,
-                                LdapConnection.SCOPE_SUB,
-                                searchFilter,
-                                requiredAttributes,
-                                false);
-            while (lsc.hasMore())
-            {
-                LdapEntry nextEntry = null;
-                try
-                {
-                    nextEntry = lsc.next();
 
-                }
-                catch (LdapException e)
-                {
-                    Console.WriteLine("Error : " + e.LdapErrorMessage);
-                    continue;
-                }
-                Console.WriteLine("\n" + nextEntry.DN);
-                LdapAttributeSet attributeSet = nextEntry.getAttributeSet();
-                System.Collections.IEnumerator ienum = attributeSet.GetEnumerator();
-                while (ienum.MoveNext())
-                {
-                    LdapAttribute attribute = (LdapAttribute)ienum.Current;
-                    string attributeName = attribute.Name;
-                    string attributeVal = attribute.StringValue;
-                    Console.WriteLine("\t" + attributeName + "\tvalue  = \t" + attributeVal);
-                }
-            }
-
-        }
 
         public void createLDAP(LdapConnection conn, string containerName, string firstName, string secondName, string email, string username, string password)
         {

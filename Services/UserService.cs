@@ -50,9 +50,11 @@ namespace WebApi.Services
             {
                 Console.WriteLine("Successful Connection LDAP");
                 // authentication successful
+                conn.Disconnect();
                 return user;
             }
 
+            conn.Disconnect();
             return null;
         }
 
@@ -89,6 +91,7 @@ namespace WebApi.Services
             _context.SaveChanges();
 
             _context.createLDAP(conn, container, user.FirstName, user.LastName, user.Username, user.Username, password);
+            conn.Disconnect();
 
             return user;
         }
