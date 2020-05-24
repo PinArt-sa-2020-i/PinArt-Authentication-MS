@@ -646,6 +646,15 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Novell.Directory.Ldap/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/Novell.Directory.Ldap.dll": {}
+        },
+        "runtime": {
+          "lib/Novell.Directory.Ldap.dll": {}
+        }
+      },
       "Pomelo.EntityFrameworkCore.MySql/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -3509,6 +3518,19 @@
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "newtonsoft.json.11.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
+      ]
+    },
+    "Novell.Directory.Ldap/2.2.1": {
+      "sha512": "mK3SU8zbGHZY7/DglN5Hs5RDqLpmDIJ3L988ICC8ED4v5JlbxnPD1PKIlHVYmE037wNGx0T+TGt2GaykufO77A==",
+      "type": "package",
+      "path": "novell.directory.ldap/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/Novell.Directory.Ldap.dll",
+        "novell.directory.ldap.2.2.1.nupkg.sha512",
+        "novell.directory.ldap.nuspec"
       ]
     },
     "Pomelo.EntityFrameworkCore.MySql/3.1.1": {
@@ -8299,6 +8321,7 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.0",
       "Microsoft.IdentityModel.Tokens >= 6.5.0",
       "MySql.Data.EntityFrameworkCore >= 8.0.19",
+      "Novell.Directory.Ldap >= 2.2.1",
       "Pomelo.EntityFrameworkCore.MySql >= 3.1.1",
       "System.IdentityModel.Tokens.Jwt >= 5.6.0"
     ]
@@ -8376,6 +8399,10 @@
             "target": "Package",
             "version": "[8.0.19, )"
           },
+          "Novell.Directory.Ldap": {
+            "target": "Package",
+            "version": "[2.2.1, )"
+          },
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
             "version": "[3.1.1, )"
@@ -8406,5 +8433,17 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Novell.Directory.Ldap 2.2.1\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v3.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Novell.Directory.Ldap",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }
